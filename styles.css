@@ -1,4 +1,4 @@
-/* CSS Reset and Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,27 +12,17 @@ body {
     background-color: #f9fafb;
 }
 
-
-
-
-
-
-
-
-
-
-/* Splash Screen */
 #splash-screen {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #ffffff; /* White */
+  background: #ffffff; 
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertical center */
-  align-items: center;     /* Horizontal center */
+  justify-content: center; 
+  align-items: center;     
   z-index: 3000;
   text-align: center;
 }
@@ -45,30 +35,18 @@ body {
 
 .splash-loader {
   border: 5px solid rgba(0, 0, 0, 0.1);
-  border-top: 5px solid #2563eb; /* Blue */
+  border-top: 5px solid #2563eb; 
   border-radius: 50%;
   width: 50px;
   height: 50px;
   animation: spin 1s linear infinite;
-  margin: 0 auto; /* Ensure center horizontally */
+  margin: 0 auto; 
 }
 
-/* Loader animation */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 html {
     scroll-behavior: smooth;
@@ -80,9 +58,6 @@ html {
     padding: 0 20px;
 }
 
-/* Main Content */
-
-/* Header */
 .header {
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -105,7 +80,6 @@ html {
     padding: 0 20px;
 }
 
-/* Header Logo */
 .nav-logo img {
   height: 100px;
   width: auto;
@@ -163,7 +137,6 @@ html {
     transition: 0.3s;
 }
 
-/* Hero Section */
 .hero {
     padding: 100px 0;
     background: linear-gradient(135deg, #f9fafb 0%, #e5f3ff 100%);
@@ -255,7 +228,6 @@ html {
     }
 }
 
-/* Section Styles */
 .section-header {
     text-align: center;
     margin-bottom: 4rem;
@@ -274,7 +246,6 @@ html {
     color: #6b7280;
 }
 
-/* About Section */
 .about {
     padding: 100px 0;
     background: white;
@@ -342,7 +313,6 @@ html {
     font-weight: 500;
 }
 
-/* Services Section */
 .services {
     padding: 100px 0;
     background: #f9fafb;
@@ -385,7 +355,6 @@ html {
     line-height: 1.6;
 }
 
-/* Doctors Section */
 .doctors {
     padding: 100px 0;
     background: white;
@@ -442,7 +411,6 @@ html {
     font-size: 0.9rem;
 }
 
-/* Appointment Section */
 .appointment {
     padding: 100px 0;
     background: #f9fafb;
@@ -519,7 +487,6 @@ html {
     box-shadow: 0 10px 20px rgba(34, 197, 94, 0.3);
 }
 
-/* Testimonials Section */
 .testimonials {
     padding: 100px 0;
     background: white;
@@ -625,7 +592,6 @@ html {
     background: #2563eb;
 }
 
-/* Contact Section */
 .contact {
     padding: 100px 0;
     background: #f9fafb;
@@ -690,7 +656,6 @@ html {
     border: none;
 }
 
-/* Footer */
 .footer {
     background: #111827;
     color: white;
@@ -706,7 +671,6 @@ html {
     margin-bottom: 0;
 }
 
-/* Modal */
 .modal {
     display: none;
     position: fixed;
@@ -792,7 +756,6 @@ html {
     }
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
