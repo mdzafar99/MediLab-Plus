@@ -1,26 +1,14 @@
-// DOM Content Loaded
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Navigation
+
     initMobileNav();
-    
-    // Appointment Form
     initAppointmentForm();
-    
-    // Contact Form
     initContactForm();
-    
-    // Testimonials Slider
     initTestimonialsSlider();
-    
-    // Smooth Scrolling for Navigation Links
     initSmoothScrolling();
-    
-    // Set minimum date for appointment booking
     setMinimumDate();
 });
 
-
-// Mobile Navigation
 function initMobileNav() {
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
@@ -31,7 +19,6 @@ function initMobileNav() {
         navMenu.classList.toggle('active');
     });
 
-    // Close menu when clicking on nav links
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
@@ -40,7 +27,6 @@ function initMobileNav() {
     });
 }
 
-// Department and Doctor Mapping
 const departmentDoctors = {
     'general': ['Dr. Vikram Singh - General Physician'],
     'pediatrics': ['Dr. Priya Mehta - Pediatrician'],
@@ -52,21 +38,17 @@ const departmentDoctors = {
     'gynecology': ['Dr. Neha Gupta - Gynecologist']
 };
 
-// Appointment Form
 function initAppointmentForm() {
     const form = document.getElementById('appointment-form');
     const departmentSelect = document.getElementById('department');
     const doctorSelect = document.getElementById('doctor');
 
-    // Update doctor dropdown based on department selection
     departmentSelect.addEventListener('change', function() {
         const selectedDepartment = this.value;
         const doctorOptions = departmentDoctors[selectedDepartment] || [];
         
-        // Clear existing options
         doctorSelect.innerHTML = '<option value="">Select Doctor</option>';
         
-        // Add new options
         doctorOptions.forEach(doctor => {
             const option = document.createElement('option');
             option.value = doctor.toLowerCase().replace(/\s+/g, '-');
@@ -74,27 +56,21 @@ function initAppointmentForm() {
             doctorSelect.appendChild(option);
         });
         
-        // Reset doctor selection
         doctorSelect.value = '';
         clearError('doctor');
     });
 
-    // Form submission
     form.addEventListener('submit', function(e) {
         e.preventDefault();
         
         if (validateAppointmentForm()) {
-            // Show confirmation modal
-            showConfirmationModal();
-            
-            // Reset form
+            showConfirmationModal();form
             form.reset();
             doctorSelect.innerHTML = '<option value="">Select Doctor</option>';
             clearAllErrors();
         }
     });
-
-    // Hero button click
+    
     const heroBtn = document.querySelector('.hero-btn');
     heroBtn.addEventListener('click', function() {
         document.getElementById('appointment').scrollIntoView({
@@ -103,14 +79,11 @@ function initAppointmentForm() {
     });
 }
 
-// Form Validation
 function validateAppointmentForm() {
     let isValid = true;
     
-    // Clear previous errors
     clearAllErrors();
     
-    // Validate name
     const name = document.getElementById('name').value.trim();
     if (!name) {
         showError('name', 'Name is required');
@@ -120,7 +93,6 @@ function validateAppointmentForm() {
         isValid = false;
     }
     
-    // Validate email
     const email = document.getElementById('email').value.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!email) {
@@ -131,7 +103,6 @@ function validateAppointmentForm() {
         isValid = false;
     }
     
-    // Validate phone
     const phone = document.getElementById('phone').value.trim();
     const phoneRegex = /^[+]?[\d\s\-\(\)]{10,}$/;
     if (!phone) {
@@ -142,21 +113,18 @@ function validateAppointmentForm() {
         isValid = false;
     }
     
-    // Validate department
     const department = document.getElementById('department').value;
     if (!department) {
         showError('department', 'Please select a department');
         isValid = false;
     }
     
-    // Validate doctor
     const doctor = document.getElementById('doctor').value;
     if (!doctor) {
         showError('doctor', 'Please select a doctor');
         isValid = false;
     }
     
-    // Validate date
     const date = document.getElementById('date').value;
     if (!date) {
         showError('date', 'Please select a date');
@@ -171,14 +139,12 @@ function validateAppointmentForm() {
             isValid = false;
         }
         
-        // Check if it's Sunday
         if (selectedDate.getDay() === 0) {
             showError('date', 'Appointments not available on Sundays');
             isValid = false;
         }
     }
     
-    // Validate time
     const time = document.getElementById('time').value;
     if (!time) {
         showError('time', 'Please select a time');
@@ -227,45 +193,38 @@ function clearAllErrors() {
     });
 }
 
-// Confirmation Modal
 function showConfirmationModal() {
     const modal = document.getElementById('confirmation-modal');
     const closeBtn = modal.querySelector('.close');
     
     modal.classList.add('show');
     
-    // Close modal when clicking close button
     closeBtn.addEventListener('click', () => {
         modal.classList.remove('show');
     });
     
-    // Close modal when clicking outside
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
             modal.classList.remove('show');
         }
     });
     
-    // Auto close after 5 seconds
     setTimeout(() => {
         modal.classList.remove('show');
     }, 5000);
 }
 
-// Contact Form
 function initContactForm() {
     const contactForm = document.getElementById('contact-form');
     
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Basic validation
         const name = document.getElementById('contact-name').value.trim();
         const email = document.getElementById('contact-email').value.trim();
         const message = document.getElementById('message').value.trim();
         
         if (name && email && message) {
-            // Show success message
             alert('Thank you for your message! We will get back to you soon.');
             contactForm.reset();
         } else {
@@ -274,7 +233,6 @@ function initContactForm() {
     });
 }
 
-// Testimonials Slider
 function initTestimonialsSlider() {
     let currentSlide = 0;
     const slides = document.querySelectorAll('.testimonial-card');
@@ -284,15 +242,12 @@ function initTestimonialsSlider() {
     const nextBtn = document.getElementById('next-testimonial');
     
     function showSlide(index) {
-        // Remove active class from all slides and dots
         slides.forEach(slide => slide.classList.remove('active'));
         dots.forEach(dot => dot.classList.remove('active'));
         
-        // Add active class to current slide and dot
         slides[index].classList.add('active');
         dots[index].classList.add('active');
         
-        // Move track
         track.style.transform = `translateX(-${index * 100}%)`;
         
         currentSlide = index;
@@ -308,20 +263,16 @@ function initTestimonialsSlider() {
         showSlide(prevIndex);
     }
     
-    // Event listeners
     nextBtn.addEventListener('click', nextSlide);
     prevBtn.addEventListener('click', prevSlide);
     
-    // Dot navigation
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => showSlide(index));
     });
-    
-    // Auto slide (optional)
+    )
     setInterval(nextSlide, 5000);
 }
 
-// Smooth Scrolling
 function initSmoothScrolling() {
     const navLinks = document.querySelectorAll('.nav-link');
     
@@ -345,7 +296,6 @@ function initSmoothScrolling() {
     });
 }
 
-// Set Minimum Date
 function setMinimumDate() {
     const dateInput = document.getElementById('date');
     const today = new Date();
@@ -356,7 +306,6 @@ function setMinimumDate() {
     dateInput.setAttribute('min', formattedDate);
 }
 
-// Scroll Animation for sections (optional enhancement)
 function initScrollAnimations() {
     const observerOptions = {
         threshold: 0.1,
@@ -372,7 +321,6 @@ function initScrollAnimations() {
         });
     }, observerOptions);
     
-    // Observe sections for animation
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
         section.style.opacity = '0';
@@ -382,10 +330,8 @@ function initScrollAnimations() {
     });
 }
 
-// Initialize scroll animations when page loads
 window.addEventListener('load', initScrollAnimations);
 
-// Active navigation highlighting
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -411,12 +357,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-
-
-
-
-
-// Splash Screen hide after load
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash-screen");
   setTimeout(() => {
