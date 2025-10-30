@@ -1,21 +1,10 @@
-// DOM Content Loaded
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Navigation
     initMobileNav();
-    
-    // Appointment Form
     initAppointmentForm();
-    
-    // Contact Form
     initContactForm();
-    
-    // Testimonials Slider
     initTestimonialsSlider();
-    
-    // Smooth Scrolling for Navigation Links
     initSmoothScrolling();
-    
-    // Set minimum date for appointment booking
     setMinimumDate();
 });
 
@@ -410,11 +399,6 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
-
-
-
-
 
 // Splash Screen hide after load
 window.addEventListener("load", () => {
