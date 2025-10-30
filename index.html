@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediLab+ Health Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="MediLabLogo.png">
+    
+</head>
+<body>
+
+
+
+
+
+    <!-- Splash Screen -->
+<div id="splash-screen">
+  <div class="splash-content">
+     <img class="splash-logo" src="MediLabLogo.png" alt="MediLab+ Logo">
+    <div class="splash-loader"></div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+    
+    
+    <!-- Main Content -->
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="nav-container">
+                    <div class="nav-logo">
+                        <a href="#">
+                            <img src="MediLabLogo.png" alt="MediLab+ Logo">
+                        </a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#doctors" class="nav-link">Doctors</a></li>
+                        <li class="nav-item"><a href="#appointment" class="nav-link">Appointment</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Your Health, Our Priority</h1>
+                    <p class="hero-subtitle">Experience world-class healthcare with our team of expert doctors and state-of-the-art facilities in the heart of New Delhi.</p>
+                    <button class="hero-btn">Book Appointment</button>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-illustration">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Simple Medical Building -->
+                            <rect x="100" y="120" width="200" height="120" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+                            
+                            <!-- Medical Cross -->
+                            <circle cx="200" cy="100" r="20" fill="#2563eb"/>
+                            <rect x="192" y="85" width="16" height="30" fill="white"/>
+                            <rect x="185" y="92" width="30" height="16" fill="white"/>
+                            
+                            <!-- Simple Windows -->
+                            <rect x="120" y="140" width="25" height="25" fill="#14b8a6" rx="3"/>
+                            <rect x="160" y="140" width="25" height="25" fill="#14b8a6" rx="3"/>
+                            <rect x="215" y="140" width="25" height="25" fill="#14b8a6" rx="3"/>
+                            <rect x="255" y="140" width="25" height="25" fill="#14b8a6" rx="3"/>
+                            
+                            <!-- Entrance -->
+                            <rect x="185" y="200" width="30" height="40" fill="#2563eb" rx="5"/>
+                            <circle cx="208" cy="220" r="2" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About MediLab+</h2>
+                    <p class="section-subtitle">Leading healthcare provider in New Delhi</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Excellence in Healthcare Since 2010</h3>
+                        <p>Located in the heart of Connaught Place, New Delhi, <strong>MediLab+</strong> Health Clinic has been providing exceptional healthcare services with a patient-first approach. Our modern facilities and team of experienced doctors ensure that you receive the best possible care.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-hospital"></i>
+                                <span>Modern Facilities</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-user-md"></i>
+                                <span>Expert Doctors</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart"></i>
+                                <span>Patient-First Care</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>10,000+</h4>
+                            <p>Patients Treated</p>
+                        </div>
+                        <div class="stat">
+                            <h4>15+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>8</h4>
+                            <p>Specialties</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive healthcare solutions</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <i class="fas fa-stethoscope"></i>
+                        <h3>General Checkup</h3>
+                        <p>Comprehensive health examinations and preventive care</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-baby"></i>
+                        <h3>Pediatrics</h3>
+                        <p>Specialized care for infants, children, and adolescents</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Cardiology</h3>
+                        <p>Heart and cardiovascular system diagnosis and treatment</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-tooth"></i>
+                        <h3>Dentistry</h3>
+                        <p>Complete dental care and oral health services</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-bone"></i>
+                        <h3>Orthopedics</h3>
+                        <p>Bone, joint, and musculoskeletal system care</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-allergies"></i>
+                        <h3>Dermatology</h3>
+                        <p>Skin, hair, and nail disorders treatment</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Neurology</h3>
+                        <p>Nervous system disorders diagnosis and care</p>
+                    </div>
+                    <div class="service-card">
+                        <i class="fas fa-venus"></i>
+                        <h3>Gynecology</h3>
+                        <p>Women's health and reproductive system care</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Doctors Section -->
+        <section id="doctors" class="doctors">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Expert Doctors</h2>
+                    <p class="section-subtitle">Meet our experienced medical professionals</p>
+                </div>
+                <div class="doctors-grid">
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="75" cy="75" r="70" fill="#f0f9ff"/>
+                                <circle cx="75" cy="60" r="25" fill="#2563eb"/>
+                                <rect x="50" y="85" width="50" height="40" rx="25" fill="#2563eb"/>
+                            </svg>
+                        </div>
+                        <h3>Dr. Rakesh Sharma</h3>
+                        <p class="specialty">Cardiologist</p>
+                        <p class="experience">15+ years experience</p>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="75" cy="75" r="70" fill="#f0fdf4"/>
+                                <circle cx="75" cy="60" r="25" fill="#22c55e"/>
+                                <rect x="50" y="85" width="50" height="40" rx="25" fill="#22c55e"/>
+                            </svg>
+                        </div>
+                        <h3>Dr. Priya Mehta</h3>
+                        <p class="specialty">Pediatrician</p>
+                        <p class="experience">12+ years experience</p>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="75" cy="75" r="70" fill="#f0fdfa"/>
+                                <circle cx="75" cy="60" r="25" fill="#14b8a6"/>
+                                <rect x="50" y="85" width="50" height="40" rx="25" fill="#14b8a6"/>
+                            </svg>
+                        </div>
+                        <h3>Dr. Aarav Kapoor</h3>
+                        <p class="specialty">Dentist</p>
+                        <p class="experience">10+ years experience</p>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="75" cy="75" r="70" fill="#fdf2f8"/>
+                                <circle cx="75" cy="60" r="25" fill="#ec4899"/>
+                                <rect x="50" y="85" width="50" height="40" rx="25" fill="#ec4899"/>
+                            </svg>
+                        </div>
+                        <h3>Dr. Neha Gupta</h3>
+                        <p class="specialty">Gynecologist</p>
+                        <p class="experience">14+ years experience</p>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="75" cy="75" r="70" fill="#fffbeb"/>
+                                <circle cx="75" cy="60" r="25" fill="#f59e0b"/>
+                                <rect x="50" y="85" width="50" height="40" rx="25" fill="#f59e0b"/>
+                            </svg>
+                        </div>
+                        <h3>Dr. Vikram Singh</h3>
+                        <p class="specialty">General Physician</p>
+                        <p class="experience">18+ years experience</p>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="75" cy="75" r="70" fill="#f5f3ff"/>
+                                <circle cx="75" cy="60" r="25" fill="#8b5cf6"/>
+                                <rect x="50" y="85" width="50" height="40" rx="25" fill="#8b5cf6"/>
+                            </svg>
+                        </div>
+                        <h3>Dr. Anjali Patel</h3>
+                        <p class="specialty">Dermatologist</p>
+                        <p class="experience">11+ years experience</p>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="75" cy="75" r="70" fill="#fef2f2"/>
+                                <circle cx="75" cy="60" r="25" fill="#ef4444"/>
+                                <rect x="50" y="85" width="50" height="40" rx="25" fill="#ef4444"/>
+                            </svg>
+                        </div>
+                        <h3>Dr. Arjun Thakur</h3>
+                        <p class="specialty">Orthopedic Surgeon</p>
+                        <p class="experience">16+ years experience</p>
+                    </div>
+                    <div class="doctor-card">
+                        <div class="doctor-image">
+                            <svg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="75" cy="75" r="70" fill="#f0f9ff"/>
+                                <circle cx="75" cy="60" r="25" fill="#06b6d4"/>
+                                <rect x="50" y="85" width="50" height="40" rx="25" fill="#06b6d4"/>
+                            </svg>
+                        </div>
+                        <h3>Dr. Meera Joshi</h3>
+                        <p class="specialty">Neurologist</p>
+                        <p class="experience">13+ years experience</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section id="appointment" class="appointment">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Book an Appointment</h2>
+                    <p class="section-subtitle">Schedule your visit with our experts</p>
+                </div>
+                <div class="appointment-form-container">
+                    <form id="appointment-form" class="appointment-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select id="department" name="department" required>
+                                <option value="">Select Department</option>
+                                <option value="general">General Checkup</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="cardiology">Cardiology</option>
+                                <option value="dentistry">Dentistry</option>
+                                <option value="orthopedics">Orthopedics</option>
+                                <option value="dermatology">Dermatology</option>
+                                <option value="neurology">Neurology</option>
+                                <option value="gynecology">Gynecology</option>
+                            </select>
+                            <span class="error-message" id="department-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="doctor">Preferred Doctor</label>
+                            <select id="doctor" name="doctor" required>
+                                <option value="">Select Doctor</option>
+                            </select>
+                            <span class="error-message" id="doctor-error"></span>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                                <span class="error-message" id="date-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                    <option value="17:00">05:00 PM</option>
+                                </select>
+                                <span class="error-message" id="time-error"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-btn">Book Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What Our Patients Say</h2>
+                    <p class="section-subtitle">Real experiences from our valued patients</p>
+                </div>
+                <div class="testimonials-slider">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <div class="testimonial-card active">
+                            <div class="testimonial-content">
+                                <p>"Excellent service and very professional staff. Dr. Sharma took great care of my heart condition and I'm feeling much better now."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <h4>Rajesh Kumar</h4>
+                                        <span>Patient</span>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"Dr. Mehta is amazing with children. My daughter feels comfortable during every visit. Highly recommend for pediatric care."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <h4>Sunita Sharma</h4>
+                                        <span>Mother of Patient</span>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-content">
+                                <p>"The dental treatment I received was painless and effective. Dr. Kapoor explained everything clearly and made me feel at ease."</p>
+                                <div class="testimonial-author">
+                                    <div class="author-info">
+                                        <h4>Amit Verma</h4>
+                                        <span>Patient</span>
+                                    </div>
+                                    <div class="rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-controls">
+                        <button class="prev-btn" id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                        <div class="testimonial-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                        </div>
+                        <button class="next-btn" id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">Get in touch with our team</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+91 93837 XXXXX</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Address</h3>
+                                <p>Connaught Place, New Delhi<br>Delhi 110001, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Working Hours</h3>
+                                <p>Mon - Sat: 9:00 AM - 6:00 PM<br>Sunday: Emergency Only</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2313178718444!2d77.21692931552276!3d28.628594694255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd0683b93a83%3A0xa05b0b1f8b8a96ae!2sConnaught%20Place%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1635320000000!5m2!1sen!2sin"
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <p>copyright &copy; 2025 MediLab+ Health Clinic</p>
+                    <p>Made with ❤️ by MD Gufran</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Appointment Booked!</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <i class="fas fa-check-circle"></i>
+                <p>Your appointment has been successfully booked. We will contact you shortly to confirm the details.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
