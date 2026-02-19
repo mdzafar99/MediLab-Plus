@@ -269,12 +269,7 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## 👥 Authors
 
-Created with ❤️ by the MediLab+ team
+Created with ❤️ by the [MD ZAFAR](https://mdzafar99.github.io/MD-ZAFAR-Portfolio/)
 
-## 📞 Support
-
-For support, email support@medilab.com or open an issue in the repository.
-
----
 
 **Note**: Remember to keep your `.env` file secure and never commit it to version control. Use `.env.example` files to share the required environment variable structure.
