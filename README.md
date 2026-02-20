@@ -267,7 +267,7 @@ Contributions are welcome! Please follow these steps:
 
 This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
+## 👥 Author
 
 Created with ❤️ by the [MD ZAFAR](https://mdzafar99.github.io/MD-ZAFAR-Portfolio/)
 
